@@ -8,6 +8,7 @@ export default function Home() {
             <span className="text-xl font-extrabold tracking-tight text-black">Devan Farandi</span>
           </div>
           <div className="hidden md:flex items-center gap-10">
+            <a className="text-sm font-semibold hover:underline underline-offset-4 transition-colors" href="#about">About Me</a>
             <a className="text-sm font-semibold hover:underline underline-offset-4 transition-colors" href="#work">Selected Works</a>
             <a className="rounded-4xl bg-black border text-white hover:bg-white hover:text-black px-6 py-3" href="#contact">
               Get in Touch
@@ -74,6 +75,32 @@ export default function Home() {
           </div>
         </div>
       </section> */}
+
+      {/* About Me Section */}
+      <section className="py-32 bg-slate-50" id="about">
+        <div className="max-w-7xl mx-auto px-10">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div>
+              <h2 className="text-black uppercase tracking-widest text-sm font-bold mb-6">About Me</h2>
+              <h3 className="text-4xl md:text-5xl font-black text-black leading-[1.1] mb-8">
+                Passionate about building <span className="text-slate-400">scalable</span> digital products.
+              </h3>
+              <div className="flex items-center gap-4 text-slate-400">
+                <div className="w-12 h-px bg-slate-200"></div>
+                <span className="text-sm font-bold uppercase tracking-wider">Independent Developer</span>
+              </div>
+            </div>
+            <div className="bg-slate-200 p-12 rounded-[2.5rem] border border-slate-100 relative overflow-hidden group">
+              <p className="text-md leading-8 text-slate-600 font-medium relative z-10">
+                A 2nd-year Informatics student skilled in web development with HTML, CSS, and JavaScript, alongside familiarity with backend development using Express.js and Laravel. Experienced in building structured web applications, developing simple RESTful APIs, and personal productivity tools.
+              </p>
+              <div className="absolute top-0 right-0 p-8 opacity-10 group-hover:opacity-20 transition-opacity">
+                <span className="material-symbols-outlined text-6xl">school</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Technologies Section - Marquee Redesign */}
       <section className="py-32 bg-black overflow-hidden border-y border-white/5" id="technologies">
